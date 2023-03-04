@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-w" />
+					<Add option="-Wfatal-errors" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="src" />
+					<Add directory="src/video" />
+					<Add directory="src/scene" />
+					<Add directory="src/io" />
+					<Add directory="src/core" />
+				</Compiler>
+				<Linker>
+					<Add option="-O1" />
+					<Add option="-lSDL2" />
+					<Add option="-lGL" />
+					<Add option="-lz" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Core.cpp" />
+		<Unit filename="Core.h" />
+		<Unit filename="Lists.cpp" />
+		<Unit filename="Patch.cpp" />
+		<Unit filename="Utils.cpp" />
+		<Unit filename="Utils.h" />
+		<Unit filename="include/CMeshBuffer.h" />
+		<Unit filename="include/CShader.h" />
+		<Unit filename="include/Engine.h" />
+		<Unit filename="include/IAnimatedMesh.h" />
+		<Unit filename="include/ICameraObject.h" />
+		<Unit filename="include/IEngineEnums.h" />
+		<Unit filename="include/IFileArchive.h" />
+		<Unit filename="include/IFileList.h" />
+		<Unit filename="include/IFileSystem.h" />
+		<Unit filename="include/IGameObject.h" />
+		<Unit filename="include/IGameScene.h" />
+		<Unit filename="include/IGameStatic.h" />
+		<Unit filename="include/IGeometryCreator.h" />
+		<Unit filename="include/IImage.h" />
+		<Unit filename="include/IIndexBuffer.h" />
+		<Unit filename="include/ILogger.h" />
+		<Unit filename="include/IMemoryReadFile.h" />
+		<Unit filename="include/IMesh.h" />
+		<Unit filename="include/IMeshBuffer.h" />
+		<Unit filename="include/IMeshManipulator.h" />
+		<Unit filename="include/IMeshWriter.h" />
+		<Unit filename="include/IRandomizer.h" />
+		<Unit filename="include/IReadFile.h" />
+		<Unit filename="include/IReferenceCounted.h" />
+		<Unit filename="include/ISkinnedMesh.h" />
+		<Unit filename="include/ITexture.h" />
+		<Unit filename="include/ITimer.h" />
+		<Unit filename="include/ITransform.h" />
+		<Unit filename="include/IVertexBuffer.h" />
+		<Unit filename="include/IWriteFile.h" />
+		<Unit filename="include/IXMLReader.h" />
+		<Unit filename="include/IXMLWriter.h" />
+		<Unit filename="include/IrrCompileConfig.h" />
+		<Unit filename="include/S3DVertex.h" />
+		<Unit filename="include/SAnimatedMesh.h" />
+		<Unit filename="include/SColor.h" />
+		<Unit filename="include/SMaterial.h" />
+		<Unit filename="include/SMaterialLayer.h" />
+		<Unit filename="include/SMesh.h" />
+		<Unit filename="include/SOverrideMaterial.h" />
+		<Unit filename="include/SSharedMeshBuffer.h" />
+		<Unit filename="include/SSkinMeshBuffer.h" />
+		<Unit filename="include/SVertexManipulator.h" />
+		<Unit filename="include/SViewFrustum.h" />
+		<Unit filename="include/aabbox3d.h" />
+		<Unit filename="include/coreutil.h" />
+		<Unit filename="include/dimension2d.h" />
+		<Unit filename="include/fast_atof.h" />
+		<Unit filename="include/heapsort.h" />
+		<Unit filename="include/irrAllocator.h" />
+		<Unit filename="include/irrArray.h" />
+		<Unit filename="include/irrList.h" />
+		<Unit filename="include/irrMap.h" />
+		<Unit filename="include/irrMath.h" />
+		<Unit filename="include/irrString.h" />
+		<Unit filename="include/irrTypes.h" />
+		<Unit filename="include/irrXML.h" />
+		<Unit filename="include/irrlicht.h" />
+		<Unit filename="include/irrpack.h" />
+		<Unit filename="include/irrunpack.h" />
+		<Unit filename="include/line2d.h" />
+		<Unit filename="include/line3d.h" />
+		<Unit filename="include/matrix3.h" />
+		<Unit filename="include/matrix4.h" />
+		<Unit filename="include/path.h" />
+		<Unit filename="include/plane3d.h" />
+		<Unit filename="include/position2d.h" />
+		<Unit filename="include/quaternion.h" />
+		<Unit filename="include/rect.h" />
+		<Unit filename="include/triangle3d.h" />
+		<Unit filename="include/vector2d.h" />
+		<Unit filename="include/vector3d.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Irrlicht.cpp" />
+		<Unit filename="src/core/CBlit.h" />
+		<Unit filename="src/core/CColorConverter.cpp" />
+		<Unit filename="src/core/CColorConverter.h" />
+		<Unit filename="src/core/CFPSCounter.cpp" />
+		<Unit filename="src/core/CFPSCounter.h" />
+		<Unit filename="src/core/CLogger.cpp" />
+		<Unit filename="src/core/CLogger.h" />
+		<Unit filename="src/core/CTimer.h" />
+		<Unit filename="src/core/irrMathFastCompat.h" />
+		<Unit filename="src/core/os.cpp" />
+		<Unit filename="src/core/os.h" />
+		<Unit filename="src/core/stb_image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/core/stb_image.h" />
+		<Unit filename="src/core/stb_image_write.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/core/stb_image_write.h" />
+		<Unit filename="src/core/utf8.cpp" />
+		<Unit filename="src/io/CFileList.cpp" />
+		<Unit filename="src/io/CFileList.h" />
+		<Unit filename="src/io/CFileSystem.cpp" />
+		<Unit filename="src/io/CFileSystem.h" />
+		<Unit filename="src/io/CLimitReadFile.cpp" />
+		<Unit filename="src/io/CLimitReadFile.h" />
+		<Unit filename="src/io/CMemoryFile.cpp" />
+		<Unit filename="src/io/CMemoryFile.h" />
+		<Unit filename="src/io/CMountPointReader.cpp" />
+		<Unit filename="src/io/CMountPointReader.h" />
+		<Unit filename="src/io/CPakReader.cpp" />
+		<Unit filename="src/io/CPakReader.h" />
+		<Unit filename="src/io/CReadFile.cpp" />
+		<Unit filename="src/io/CReadFile.h" />
+		<Unit filename="src/io/CWriteFile.cpp" />
+		<Unit filename="src/io/CWriteFile.h" />
+		<Unit filename="src/io/CXMLReader.cpp" />
+		<Unit filename="src/io/CXMLReader.h" />
+		<Unit filename="src/io/CXMLReaderImpl.h" />
+		<Unit filename="src/io/CXMLWriter.cpp" />
+		<Unit filename="src/io/CXMLWriter.h" />
+		<Unit filename="src/io/CZipReader.cpp" />
+		<Unit filename="src/io/CZipReader.h" />
+		<Unit filename="src/io/irrXML.cpp" />
+		<Unit filename="src/scene/CAnimatedMeshMD2.cpp" />
+		<Unit filename="src/scene/CAnimatedMeshMD2.h" />
+		<Unit filename="src/scene/CAnimatedMeshMD3.cpp" />
+		<Unit filename="src/scene/CAnimatedMeshMD3.h" />
+		<Unit filename="src/scene/CAnimator.cpp" />
+		<Unit filename="src/scene/CCamera.cpp" />
+		<Unit filename="src/scene/CCameraObject.cpp" />
+		<Unit filename="src/scene/CGameObject.cpp" />
+		<Unit filename="src/scene/CGameObject.h" />
+		<Unit filename="src/scene/CGameScene.cpp" />
+		<Unit filename="src/scene/CGameScene.h" />
+		<Unit filename="src/scene/CGameStatic.cpp" />
+		<Unit filename="src/scene/CGeoTerrain.cpp" />
+		<Unit filename="src/scene/CGeometryCreator.cpp" />
+		<Unit filename="src/scene/CGeometryCreator.h" />
+		<Unit filename="src/scene/CMeshAnimator.cpp" />
+		<Unit filename="src/scene/CMeshAnimator.h" />
+		<Unit filename="src/scene/CMeshManipulator.cpp" />
+		<Unit filename="src/scene/CMeshManipulator.h" />
+		<Unit filename="src/scene/CMeshRenderer.cpp" />
+		<Unit filename="src/scene/CShadowMesh.cpp" />
+		<Unit filename="src/scene/CShadowMesh.h" />
+		<Unit filename="src/scene/CSkinnedMesh.cpp" />
+		<Unit filename="src/scene/CSkinnedMesh.h" />
+		<Unit filename="src/scene/CTransform.cpp" />
+		<Unit filename="src/scene/CTransform.h" />
+		<Unit filename="src/scene/Octree.h" />
+		<Unit filename="src/video/CImage.cpp" />
+		<Unit filename="src/video/CImage.h" />
+		<Unit filename="src/video/COpenGLTexture.cpp" />
+		<Unit filename="src/video/COpenGLTexture.h" />
+		<Unit filename="src/video/CShader.cpp" />
+		<Unit filename="src/video/CVertexBuffer.cpp" />
+		<Unit filename="src/video/CVertexBuffer.h" />
+		<Unit filename="src/video/S2DVertex.h" />
+		<Unit filename="src/video/S4DVertex.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
